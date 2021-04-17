@@ -1,0 +1,58 @@
+version: 2
+
+models: 
+  - name: dim_employees 
+    columns:
+      - name: employee_sk
+        description: This is the primary key of the employees. This test is used to evaluate if the employee_sk is unique and not null.
+        tests:
+          - unique
+          - not_null 
+
+      - name: last_name
+        description: This column contains the last name of the employee.
+
+      - name: first_name
+        description: This column contains the firts name of the employee.
+
+      - name: title
+        description: This column contains the title of the employee.
+
+      - name: title_of_courtesy
+        description: This column contains the title of courtesy of the employee.
+
+      - name: hire_date
+        description: This column contains the date where the employee have been hired.
+
+      - name: birth_date
+        description: This column contains the birhtday date of the employee.
+
+      - name: reports_to
+        description: This column contains the code of the person the employee needs to report to.
+      
+      - name: home_phone
+        description: This column contains the main phone number of the employee.
+
+      - name: address
+        description: This column contains the address of the employee.
+
+      - name: city
+        description: This column contains the city date of the employee.
+
+      - name: region
+        description: This column contains the region of the employee.
+
+      - name: country
+        description: This column contains the country of the employee.
+  
+      - name: postal_code
+        description: This column contains the postal_code of the employee.
+
+      - name: extension
+        description: This column contains the code about other informtions of the employee.
+      
+      - name: photo_path
+        description: This column contains the web site address to employee picture.
+
+      - name: notes
+        description: This column contains notes about employee.

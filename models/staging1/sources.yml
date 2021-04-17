@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: northwind_etl
+    description: Essa é a fonte de dados do nosso ERP, criado através do Stitch
+    tables:
+      - name: categories
+        description: Esta tabela contém informações sobre as categorias de produtos comercializados pela Northwind
+      - name: customers
+        description: Esta tabela contém informações sobre os clientes da Northwind
+      - name: employees
+        description: Esta tabela contém informações sobre os funcionários da Northwind
+      - name: employee_territories
+        description: Esta tabela contém as chaves de identificação das tabelas employee e territory
+      - name: orders
+        description: Esta tabelas contém informações sobre os pedidos realizados a Northwind
+      - name: order_details
+        description: Esta tabelas contém informações detalhadas sobre os pedidos realizados a Northwind
+      - name: products
+        description: Esta tabela contém informações sobre os produtos vendidos pela Northwind
+      - name: region
+        description: Esta tabela contém informações sobre as regiões onde estão localizados os funcionários da Northwind  
+      - name: shippers
+        description: Esta tabela contém informações sobre as transportadoras que prestam serviço para a Northwind      
+      - name: suppliers
+        description: Esta tabela contém informações sobre os fornecedores da Northwind
+      - name: territories
+        description: Esta tabela contém informações sobre as cidades onde estão localizados os funcionários da Northwind  
+      - name: us_states
+        description: Esta tabela contém um detalhamento sobre os estados americanos  
+      
+      

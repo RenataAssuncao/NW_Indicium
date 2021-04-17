@@ -1,0 +1,43 @@
+version: 2
+
+models: 
+  - name: dim_suppliers 
+    columns:
+      - name: supplier_sk
+        description: This is the primary key of the suppliers. This test is used to evaluate if the supplier_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: company_name
+        description: This columns contains the supplier company name.
+
+      - name: contact_name
+        description: This column contains the name of the supplier contact.
+
+      - name: contact_title
+        description: This column contains the contact title of the contact name.
+
+      - name: address
+        description: This column contains the address of the supplier.
+
+      - name: city
+        description: This column contains the city of the supplier.
+
+      - name: region
+        description: This column contains the region of the supplier.
+
+      - name: country
+        description: This column contains the cpuntry of the supplier.
+
+      - name: postal_code
+        description: This column contains the postal_code of the supplier.
+    
+      - name: phone
+        description: This column contains the phone of the supplier.
+
+      - name: fax
+        description: This column contains the fax of the supplier.
+
+      - name: homepage
+        description: This column contains the homepage of the supplier.

@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: fact_orders
+    columns:
+      - name: order_id
+        description: Corresponds to the order natural key.
+        tests:
+          - not_null
+
+      - name: customer_fk
+        description: Corresponds to the customer foreing key. This test garantee that are no missing dimensions in customer.
+        tests:
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_sk
+
+      - name: employee_fk
+        description: Corresponds to the employees foreing key. This test garantee that are no missing dimensions in employee.
+        tests:
+          - relationships:
+              to: ref('dim_employees')
+              field: employee_sk
+
+      - name: product_fk
+        description: Corresponds to the product foreing key. This test garantee that are no missing dimensions in product.
+        tests:
+          - relationships:
+              to: ref('dim_products')
+              field: product_sk
+
+      - name: shipper_fk
+        description: Corresponds to the shipper foreing key. This test garantee that are no missing dimensions in shipper.
+        tests:
+          - relationships:
+              to: ref('dim_shippers')
+              field: shipper_sk

@@ -1,0 +1,37 @@
+version: 2
+
+models: 
+  - name: dim_shippers 
+    columns:
+      - name: shipper_sk
+        description: This is the primary key of the shippers. This test is used to evaluate if the shipper_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: shipper_sk
+        description: This is the primary key of the shippers.
+
+      - name: company_name
+        description: This columns contains the shippers company name.
+
+      - name: ship_name
+        description: This column contains the name to which the product will be sent.
+
+      - name: ship_address
+        description: This column contains the address to which the product will be sent.
+
+      - name: ship_city
+        description: This column contains the city to which the product will be sent.
+
+      - name: ship_region
+        description: This column contains the region to which the product will be sent.
+
+      - name: ship_country
+        description: This column contains the country to which the product will be sent.
+
+      - name: ship_postal_code
+        description: This column contains the postal code to which the product will be sent.
+
+      - name: phone
+        description: This column contains the shippers company phone.

@@ -1,0 +1,37 @@
+version: 2
+
+models: 
+  - name: dim_products 
+    columns:
+      - name: product_sk
+        description: This is the primary key of the products. This test is used to evaluate if the product_sk is unique and not null.
+        tests:
+          - unique
+          - not_null
+
+      - name: supplier_id
+        description: This is the natural key of the supplier.
+      
+      - name: product_name
+        description: This column contains the products names.
+      
+      - name: category_name
+        description: This column contains the category names of products.
+
+      - name: quantity_per_unit
+        description: This column contains the quantity of products per unit.
+
+      - name: units_in_stock
+        description: This column contains the quantity of products units in stock.
+
+      - name: units_on_order
+        description: This column contains the quantity of products units on order.
+
+      - name: reorder_level
+        description: This column contains the level to reorder a product.
+
+      - name: is_discontinued
+        description: This column contains information on product continuity.
+
+      - name: description
+        description: This column contains product's descriptions.

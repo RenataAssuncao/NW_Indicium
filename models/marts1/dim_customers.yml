@@ -1,0 +1,40 @@
+version: 2
+
+models: 
+  - name: dim_customers 
+    columns:
+      - name: customer_sk
+        description: This is the primary key of the customer. This test is used to evaluate if the customer_sk is unique and not null
+        tests:
+          - unique
+          - not_null
+
+      - name: company_name
+        description: This column contains the name of the customers company.
+
+      - name: contact_name
+        description: This column contains the name of the customers contact. 
+
+      - name: contact_title
+        description: This column contains the contact title of the name of contact.
+        
+      - name: address
+        description: This column contains the address of the customers.
+
+      - name: city
+        description: This column contains the city of the costumers.
+
+      - name: region
+        description: This column contains the region of the costumers.
+
+      - name: country
+        description: This column contains the cpuntry of the costumers.
+
+      - name: postal_code
+        description: This column contains the postal_code of the costumers.
+
+      - name: phone
+        description: This column contains the phone of the costumers.
+
+      - name: fax
+        description: This column contains the fax of the costumers.
